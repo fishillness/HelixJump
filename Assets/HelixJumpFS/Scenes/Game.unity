@@ -123,6 +123,50 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &109390110
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 109390112}
+  - component: {fileID: 109390111}
+  m_Layer: 0
+  m_Name: Managers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &109390111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109390110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc4884e8a863e3846984e43803eda355, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballController: {fileID: 845696033}
+--- !u!4 &109390112
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109390110}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,8 +258,19 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &845696033 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 845696033, guid: 6dff97bfbd4bdfc4abf6d19d8d2541a8, type: 3}
+  m_PrefabInstance: {fileID: 1216103117658956068}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9360fb3cb4c439c48a55fae6a9a10b2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &845696036 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1036628585713216220, guid: 6dff97bfbd4bdfc4abf6d19d8d2541a8, type: 3}
@@ -322,7 +377,7 @@ Transform:
   m_Children:
   - {fileID: 1512488747}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1559518971
 MonoBehaviour:
@@ -352,7 +407,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   axis: {fileID: 1512488747}
   floorPrefab: {fileID: 333595909742234432, guid: fe6e876d025002d4b93bb593e4183c63, type: 3}
-  defaultFloorAmount: 12
+  defaultFloorAmount: 6
   floorHeight: 2.5
   amountEmptySegment: 2
   minTrapSegment: 1
@@ -367,7 +422,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1036628585713216220, guid: 6dff97bfbd4bdfc4abf6d19d8d2541a8, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1036628585713216220, guid: 6dff97bfbd4bdfc4abf6d19d8d2541a8, type: 3}
       propertyPath: m_LocalPosition.x
