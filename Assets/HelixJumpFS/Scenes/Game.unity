@@ -354,6 +354,9 @@ MonoBehaviour:
   floorPrefab: {fileID: 333595909742234432, guid: fe6e876d025002d4b93bb593e4183c63, type: 3}
   defaultFloorAmount: 12
   floorHeight: 2.5
+  amountEmptySegment: 2
+  minTrapSegment: 1
+  maxTrapSegment: 3
   BALLTRANSFORM: {fileID: 845696036}
 --- !u!1001 &1216103117658956068
 PrefabInstance:

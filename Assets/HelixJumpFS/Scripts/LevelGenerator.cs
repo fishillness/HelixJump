@@ -8,6 +8,9 @@ public class LevelGenerator : MonoBehaviour
     [Header("Settings")]
     [SerializeField] private int defaultFloorAmount;
     [SerializeField] private float floorHeight;
+    [SerializeField] private int amountEmptySegment;
+    [SerializeField] private int minTrapSegment;
+    [SerializeField] private int maxTrapSegment;
 
     public Transform BALLTRANSFORM;
 
@@ -30,6 +33,22 @@ public class LevelGenerator : MonoBehaviour
             Floor floor = Instantiate(floorPrefab, transform);
             floor.transform.Translate(0, i * floorHeight, 0);
             floor.name = "Floor " + i;
+
+            if (i == 0)
+            {
+                floor.SetFinishAllSegment();
+            }
+            if (i > 0 && i < floorAmount - 1)
+            {
+                floor.SetRandomRotation();
+                floor.AddEmptySegment(amountEmptySegment);
+                floor.AddRandomTrapSegment( Random.Range(minTrapSegment, maxTrapSegment) );
+            }
+            if (i == floorAmount - 1)
+            {
+                floor.AddEmptySegment(amountEmptySegment);
+            }
+            
         }
     }
 
