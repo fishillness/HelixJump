@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 109390111}
   - component: {fileID: 109390113}
   - component: {fileID: 109390114}
+  - component: {fileID: 109390115}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -199,6 +200,20 @@ MonoBehaviour:
   ballController: {fileID: 845696033}
   levelProgress: {fileID: 109390111}
   scores: 0
+--- !u!114 &109390115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109390110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34f3d9f391bf084685aab56f893f61d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballController: {fileID: 845696033}
+  mouseRotator: {fileID: 1559518971}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
