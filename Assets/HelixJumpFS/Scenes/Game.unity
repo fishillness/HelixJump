@@ -242,13 +242,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d5a627fec29ed14783ef4310cc24c06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballController: {fileID: 845696033}
   axisMat: {fileID: 2100000, guid: 35a7e0b52cf39b245b80cd304b77705e, type: 2}
   ballMat: {fileID: 2100000, guid: b9f6f6f562c2a93419cc47e7b2c91d57, type: 2}
   defaultSegmentMat: {fileID: 2100000, guid: ea9dcd2f9ab2d7b43bb2a0f25540c0f5, type: 2}
   finishSegmentMat: {fileID: 2100000, guid: 6a4558461d91d264d887a104c475b426, type: 2}
   trapSegmentMat: {fileID: 2100000, guid: d5b9d7e6519e20748a042491e1e3750f, type: 2}
-  random: 0
   axisColors:
   - {r: 0.94509804, g: 0.9372549, b: 0.9529412, a: 0}
   - {r: 0.98823535, g: 0.9176471, b: 0.5372549, a: 0}
@@ -433,7 +431,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 845696033, guid: 6dff97bfbd4bdfc4abf6d19d8d2541a8, type: 3}
   m_PrefabInstance: {fileID: 1216103117658956068}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1608218702}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9360fb3cb4c439c48a55fae6a9a10b2b, type: 3}
@@ -575,6 +573,25 @@ MonoBehaviour:
   amountEmptySegment: 2
   minTrapSegment: 1
   maxTrapSegment: 3
+--- !u!1 &1608218702 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8844148546823703448, guid: 6dff97bfbd4bdfc4abf6d19d8d2541a8, type: 3}
+  m_PrefabInstance: {fileID: 1216103117658956068}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1608218707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608218702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9138732de9674345aea010416bb4a8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballController: {fileID: 845696033}
+  mark: {fileID: 450970098622905127, guid: 06b97f03069ec61499b956d2d2ca7cf2, type: 3}
 --- !u!20 &1717319357 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 1216103117538954327, guid: 6dff97bfbd4bdfc4abf6d19d8d2541a8, type: 3}

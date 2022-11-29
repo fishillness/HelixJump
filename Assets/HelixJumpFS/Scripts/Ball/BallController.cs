@@ -7,6 +7,9 @@ public class BallController : OneColliderTrigger
     private BallMovement movement;
     [HideInInspector] public UnityEvent<SegmentType> CollisionSegment;
 
+    private Collider lastCollider;  ///////////////
+    public Collider LastCollider => lastCollider;
+
     private void Start()
     {
         movement = GetComponent<BallMovement>();
@@ -14,6 +17,7 @@ public class BallController : OneColliderTrigger
     protected override void OnOneTriggerEnter(Collider other)
     {
         Segment segment = other.GetComponent<Segment>();
+        lastCollider = other;
 
         if (segment != null)
         {

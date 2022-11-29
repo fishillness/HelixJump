@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PaletteSelection : BallEvents
+public class PaletteSelection : MonoBehaviour
 {
     [SerializeField] private Material axisMat;
     [SerializeField] private Material ballMat;
