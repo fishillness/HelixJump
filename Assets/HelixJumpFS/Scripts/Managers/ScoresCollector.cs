@@ -12,6 +12,6 @@ public class ScoresCollector : BallEvents
         {
             scores += levelProgress.CurrentLevel;
         }
-
     }
+
 }

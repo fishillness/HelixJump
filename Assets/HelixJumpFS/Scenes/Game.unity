@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 109390113}
   - component: {fileID: 109390114}
   - component: {fileID: 109390115}
+  - component: {fileID: 109390116}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -214,6 +215,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ballController: {fileID: 845696033}
   mouseRotator: {fileID: 1559518971}
+--- !u!114 &109390116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109390110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eec474c0c31a29447bbef91fa5a3a05a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballController: {fileID: 845696033}
+  scoresCollector: {fileID: 109390114}
 --- !u!1 &252321036
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,6 +547,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 679458859271204787, guid: 37adc9c737b1891489f49ead75c01b80, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 679458859271204787, guid: 37adc9c737b1891489f49ead75c01b80, type: 3}
+      propertyPath: m_Color.g
+      value: 0.31121394
+      objectReference: {fileID: 0}
+    - target: {fileID: 679458859271204787, guid: 37adc9c737b1891489f49ead75c01b80, type: 3}
+      propertyPath: m_Color.r
+      value: 0.40087155
+      objectReference: {fileID: 0}
     - target: {fileID: 679458860945515602, guid: 37adc9c737b1891489f49ead75c01b80, type: 3}
       propertyPath: m_Camera
       value: 
@@ -683,15 +710,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1216103117538954327, guid: 6dff97bfbd4bdfc4abf6d19d8d2541a8, type: 3}
       propertyPath: m_BackGroundColor.b
-      value: 0.9811321
+      value: 0.9716981
       objectReference: {fileID: 0}
     - target: {fileID: 1216103117538954327, guid: 6dff97bfbd4bdfc4abf6d19d8d2541a8, type: 3}
       propertyPath: m_BackGroundColor.g
-      value: 0.8861577
+      value: 0.92436886
       objectReference: {fileID: 0}
     - target: {fileID: 1216103117538954327, guid: 6dff97bfbd4bdfc4abf6d19d8d2541a8, type: 3}
       propertyPath: m_BackGroundColor.r
-      value: 0.5127803
+      value: 0.73702383
       objectReference: {fileID: 0}
     - target: {fileID: 4020075589416854644, guid: 6dff97bfbd4bdfc4abf6d19d8d2541a8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -710,6 +737,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 762948902, guid: 1ae9c19bc837edd4091cc1ab7acfc016, type: 3}
+      propertyPath: ballController
+      value: 
+      objectReference: {fileID: 845696033}
+    - target: {fileID: 762948902, guid: 1ae9c19bc837edd4091cc1ab7acfc016, type: 3}
+      propertyPath: recordProgress
+      value: 
+      objectReference: {fileID: 109390116}
     - target: {fileID: 9221519108524547814, guid: 1ae9c19bc837edd4091cc1ab7acfc016, type: 3}
       propertyPath: ballController
       value: 
