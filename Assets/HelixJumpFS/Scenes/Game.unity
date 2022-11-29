@@ -441,7 +441,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 321185411}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1225367545}
+        m_TargetAssemblyTypeName: SceneHelper, Assembly-CSharp
+        m_MethodName: RestartLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &321185411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -637,7 +649,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 617381199}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1225367545}
+        m_TargetAssemblyTypeName: SceneHelper, Assembly-CSharp
+        m_MethodName: RestartLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &617381199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -896,7 +920,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &772498750
 RectTransform:
   m_ObjectHideFlags: 0
@@ -943,7 +967,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &879741269
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1055,6 +1079,8 @@ GameObject:
   - component: {fileID: 1225367542}
   - component: {fileID: 1225367541}
   - component: {fileID: 1225367540}
+  - component: {fileID: 1225367545}
+  - component: {fileID: 1225367544}
   m_Layer: 5
   m_Name: GUICanvas
   m_TagString: Untagged
@@ -1146,6 +1172,33 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1225367544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225367539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c548d6f7b3dd95947aac67d688f09922, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballController: {fileID: 845696033}
+  passedPanel: {fileID: 772498749}
+  defeatPanel: {fileID: 879741268}
+--- !u!114 &1225367545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225367539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d83a9b5c45bdbf34b85672f6c84df002, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1336151306
 GameObject:
   m_ObjectHideFlags: 0
@@ -1429,7 +1482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   axis: {fileID: 1512488747}
   floorPrefab: {fileID: 333595909742234432, guid: fe6e876d025002d4b93bb593e4183c63, type: 3}
-  defaultFloorAmount: 6
+  defaultFloorAmount: 3
   floorHeight: 2.5
   amountEmptySegment: 2
   minTrapSegment: 1
