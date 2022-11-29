@@ -13,6 +13,8 @@ public class LevelGenerator : MonoBehaviour
     [SerializeField] private int maxTrapSegment;
 
     private float floorAmount = 0;
+    public float FloorAmount => floorAmount;
+
     private float lastFloorY = 0;
     public float LastFloorY => lastFloorY;
 
