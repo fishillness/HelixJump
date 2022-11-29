@@ -26,7 +26,6 @@ public class BallMovement : MonoBehaviour
             {
                 fallSpeed += fallSpeedAxeleration * Time.deltaTime;
             }
-        
         }
         else
         {
@@ -47,7 +46,6 @@ public class BallMovement : MonoBehaviour
         enabled = true;
         floorY = startFloorY - fallHeight;
     }
-
     public void Stop()
     {
         animator.speed = 0;

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class OneColliderTrigger : MonoBehaviour
@@ -13,8 +11,7 @@ public abstract class OneColliderTrigger : MonoBehaviour
 
         lastCollider = other;
 
-        OnOneTriggerEnter(other)
-            ;
+        OnOneTriggerEnter(other);
     }
     private void OnTriggerExit(Collider other)
     {

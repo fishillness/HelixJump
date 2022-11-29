@@ -13,6 +13,5 @@ public abstract class BallEvents : MonoBehaviour
         ballController.CollisionSegment.RemoveListener(OnBallCollisionSegment);
     }
 
-    //Virtual Events
     protected virtual void OnBallCollisionSegment(SegmentType type) { }
 }

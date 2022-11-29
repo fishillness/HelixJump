@@ -8,7 +8,6 @@ public class UIRecordText : BallEvents
 
     private void Start()
     {
-
         recordText.text = "Рекорд: " + recordProgress.Record.ToString();
     }
 

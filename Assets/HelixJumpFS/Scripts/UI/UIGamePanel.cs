@@ -10,7 +10,6 @@ public class UIGamePanel : BallEvents
         passedPanel.SetActive(false);
         defeatPanel.SetActive(false);
     }
-
     protected override void OnBallCollisionSegment(SegmentType type)
     {
         if (type == SegmentType.Trap)

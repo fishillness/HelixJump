@@ -8,7 +8,7 @@ public class BallMark : BallEvents
     {
         if (type == SegmentType.Default || type == SegmentType.Trap)
         {
-            GameObject gameObjectite = Instantiate(mark, ballController.LastCollider.transform);
+            GameObject gameObjectite = Instantiate(mark, ballController.LCollider.transform);
 
             float x = ballController.gameObject.transform.position.x;
             float y = ballController.gameObject.transform.position.y;

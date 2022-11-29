@@ -27,7 +27,6 @@ public class Floor : MonoBehaviour
             defaultSegments.RemoveAt(index);
         }
     }
-
     public void SetRandomRotation()
     {
         transform.eulerAngles = new Vector3(0, Random.Range(0, 360), 0);

@@ -49,7 +49,6 @@ public class LevelGenerator : MonoBehaviour
             
         }
     }
-
     private void DestroyChild()
     {
         for(int i = 0; i < transform.childCount; i++)
